@@ -14,3 +14,7 @@ app.get('/liveness', (req,res)=>{
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)
 })
+
+app.get('/readiness',(req,res)=>{
+  return {status:"pok"}})
+
